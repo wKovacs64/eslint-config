@@ -1,9 +1,12 @@
-version: 2
-jobs:
-  build:
-    docker:
-      - image: circleci/node
-    working_directory: ~/repo
+version: 2.1
+
+defaults: &defaults
+  docker:
+    - image: circleci/node
+  working_directory: ~/repo
+
+commands:
+  setup-repo:
     steps:
       - checkout
       - restore_cache:
@@ -18,4 +21,27 @@ jobs:
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache
+
+jobs:
+  test:
+    <<: *defaults
+    steps:
+      - setup-repo
       - run: yarn validate
+  release:
+    <<: *defaults
+    steps:
+      - setup-repo
+      - run: yarn semantic-release
+
+workflows:
+  version: 2
+  test_and_release:
+    jobs:
+      - test
+      - release:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master

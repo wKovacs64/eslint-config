@@ -2,16 +2,22 @@
   "name": "@wkovacs64/eslint-config",
   "version": "0.0.0",
   "description": "@wKovacs64 ESLint config",
-  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "wkovacs64"
+  ],
   "author": {
     "name": "Justin Hall",
     "email": "justin.r.hall@gmail.com"
   },
   "license": "MIT",
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "wkovacs64"
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "base",
+    "react",
+    "ts"
   ],
   "repository": {
     "type": "git",

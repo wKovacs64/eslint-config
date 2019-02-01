@@ -5,8 +5,10 @@ This is my personal ESLint configuration.
 ### Install
 
 ```
-yarn add --dev eslint @wkovacs64/eslint-config
+npx install-peerdeps --dev --yarn @wkovacs64/eslint-config
 ```
+
+> Drop the `--yarn` when using `npm`.
 
 ### Usage
 

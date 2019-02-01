@@ -16,8 +16,7 @@ module.exports = {
   'jest/no-test-return-statement': 'off',
   'jest/no-truthy-falsy': 'off',
   'jest/prefer-expect-assertions': 'off',
-  // prefer-spy-on should be 'warn' but currently throws when using @typescript-eslint/parser
-  'jest/prefer-spy-on': 'off',
+  'jest/prefer-spy-on': 'warn',
   'jest/prefer-strict-equal': 'off',
   'jest/prefer-to-be-null': 'warn',
   'jest/prefer-to-be-undefined': 'warn',

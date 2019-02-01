@@ -6,5 +6,6 @@ module.exports = {
     jest: true,
   },
   parser: 'babel-eslint',
+  plugins: ['jest'],
   rules,
 };

@@ -1,6 +1,6 @@
 # @wkovacs64/eslint-config
 
-This is my personal ESLint configuration.
+This is my base personal ESLint configuration.
 
 ### Install
 
@@ -14,34 +14,17 @@ npx install-peerdeps --dev --yarn @wkovacs64/eslint-config
 
 Extend in your `.eslintrc.js`:
 
-##### Base (e.g. Node.js)
-
 ```js
 module.exports = {
   extends: ['@wkovacs64/eslint-config'],
 };
 ```
 
-##### React
+### Other Configurations
 
-```js
-module.exports = {
-  extends: ['@wkovacs64/eslint-config/react'],
-};
-```
-
-##### TypeScript
-
-```js
-module.exports = {
-  extends: ['@wkovacs64/eslint-config/ts'],
-};
-```
-
-##### TypeScript + React
-
-```js
-module.exports = {
-  extends: ['@wkovacs64/eslint-config/ts/react'],
-};
-```
+- React:
+  [@wkovacs64/eslint-config-react](https://github.com/wkovacs64/eslint-config-react)
+- TypeScript:
+  [@wkovacs64/eslint-config-ts](https://github.com/wkovacs64/eslint-config-ts)
+- TypeScript and React:
+  [@wkovacs64/eslint-config-ts-react](https://github.com/eslint-config-ts-react)

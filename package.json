@@ -41,7 +41,7 @@
   "dependencies": {
     "babel-eslint": "^10.0.1",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^4.0.0"
+    "eslint-config-prettier": "^5.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "8.0.0",

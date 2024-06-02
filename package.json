@@ -18,9 +18,7 @@
   "type": "module",
   "main": "index.js",
   "exports": {
-    ".": {
-      "import": "./index.js"
-    }
+    ".": "./index.js"
   },
   "files": [
     "index.js"

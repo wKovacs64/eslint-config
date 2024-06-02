@@ -94,7 +94,9 @@ export const config = tseslint.config(
           },
           languageOptions: {
             parserOptions: {
-              jsx: true,
+              ecmaFeatures: {
+                jsx: true,
+              },
             },
           },
           rules: {
@@ -112,6 +114,11 @@ export const config = tseslint.config(
                 assert: 'either',
               },
             ],
+          },
+          settings: {
+            react: {
+              version: 'detect',
+            },
           },
         }
       : null,

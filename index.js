@@ -262,7 +262,6 @@ export const config = [
             .default,
         },
         rules: {
-          'testing-library/no-unnecessary-act': [ERROR, { isStrict: false }],
           'testing-library/await-async-events': ERROR,
           'testing-library/await-async-queries': ERROR,
           'testing-library/await-async-utils': ERROR,

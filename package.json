@@ -1,0 +1,79 @@
+{
+  "name": "@wkovacs64/eslint-config",
+  "version": "0.1.0",
+  "description": "@wKovacs64 ESLint config",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslintplugin",
+    "eslint-config",
+    "eslint-plugin",
+    "wkovacs64"
+  ],
+  "author": {
+    "name": "Justin Hall",
+    "email": "justin.r.hall@gmail.com"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    }
+  },
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/wKovacs64/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wKovacs64/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wKovacs64/eslint-config/issues"
+  },
+  "scripts": {
+    "changeset": "changeset",
+    "changeset:version": "changeset version && npm install --package-lock-only",
+    "changeset:publish": "changeset publish",
+    "format": "prettier --cache --write .",
+    "format:check": "prettier --cache --check .",
+    "lint": "eslint .",
+    "typecheck": "tsc"
+  },
+  "private": false,
+  "prettier": "@wkovacs64/prettier-config",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": "^18.18.0 || >=20.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.4.0"
+  },
+  "dependencies": {
+    "eslint-plugin-import-x": "^0.5.1",
+    "eslint-plugin-jest-dom": "^5.4.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-testing-library": "^6.2.2",
+    "eslint-plugin-vitest": "^0.5.4",
+    "globals": "^15.3.0",
+    "typescript-eslint": "^8.0.0-alpha.20"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "0.5.0",
+    "@changesets/cli": "2.27.5",
+    "@wkovacs64/prettier-config": "4.0.0",
+    "eslint": "9.4.0",
+    "prettier": "3.3.0",
+    "typescript": "5.4.5"
+  },
+  "// TODO": "remove eslint override once our dependencies include v9 in their peerDependencies",
+  "overrides": {
+    "eslint": "9.4.0"
+  }
+}

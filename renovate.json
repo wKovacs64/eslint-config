@@ -6,7 +6,7 @@
   ],
   "commitMessageTopic": "{{depName}}",
   "automergeType": "branch",
-  "automerge": false,
+  "automerge": true,
   "major": {
     "automerge": false
   },

@@ -16,8 +16,8 @@ npm install --save-dev @wkovacs64/eslint-config
 
 ### Usage
 
-Follow the ESLint documentation on [shared configurations][eslint-sharing]. Also
-note the documentation on [ignoring files][eslint-ignores] if you need to ignore
+Follow the ESLint documentation on [shared configurations][eslint-sharing]. See
+the documentation on [ignoring files][eslint-ignores] if you need to ignore
 anything the config doesn't already ignore by default.
 
 ### Examples

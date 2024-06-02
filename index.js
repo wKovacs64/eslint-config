@@ -4,6 +4,7 @@
 import globals from 'globals';
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
+import playwright from 'eslint-plugin-playwright';
 
 const ERROR = 'error';
 const WARN = 'warn';
@@ -20,6 +21,8 @@ const hasReact = await has('react');
 const hasTestingLibrary = await has('@testing-library/dom');
 const hasJestDom = await has('@testing-library/jest-dom');
 const hasVitest = await has('vitest');
+const hasPlaywright = await has('playwright');
+
 const vitestFiles = ['**/__tests__/**/*', '**/*.test.*'];
 const testFiles = ['**/tests/**', '**/#tests/**', ...vitestFiles];
 const playwrightFiles = ['**/playwright/tests/**'];
@@ -337,6 +340,13 @@ export const config = tseslint.config(
             // made aware of it
             'vitest/no-focused-tests': [WARN, { fixable: false }],
           },
+        }
+      : null,
+
+    hasPlaywright
+      ? {
+          files: playwrightFiles,
+          ...playwright.configs['flat/recommended'],
         }
       : null,
   ].filter(Boolean),

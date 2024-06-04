@@ -5,6 +5,8 @@
 import globals from 'globals';
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
+import reactPlugin from 'eslint-plugin-react';
+import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import playwright from 'eslint-plugin-playwright';
 
 const ERROR = 'error';
@@ -77,8 +79,8 @@ export const config = [
     ? {
         files: ['**/*.tsx', '**/*.jsx'],
         plugins: {
-          react: (await import('eslint-plugin-react')).default,
-          'jsx-a11y': (await import('eslint-plugin-jsx-a11y')).default,
+          react: reactPlugin,
+          'jsx-a11y': jsxA11yPlugin,
         },
         languageOptions: {
           parserOptions: {
@@ -88,6 +90,8 @@ export const config = [
           },
         },
         rules: {
+          ...reactPlugin.configs.recommended.rules,
+          ...jsxA11yPlugin.configs.recommended.rules,
           'react/function-component-definition': [
             'error',
             {
@@ -95,7 +99,7 @@ export const config = [
               unnamedComponents: 'arrow-function',
             },
           ],
-          'react/jsx-key': WARN,
+          'react/prop-types': OFF,
           'jsx-a11y/label-has-associated-control': [
             ERROR,
             {

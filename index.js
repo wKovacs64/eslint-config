@@ -250,6 +250,13 @@ export const config = [
           '@typescript-eslint/require-await': OFF,
           '@typescript-eslint/unified-signatures': 'warn',
         },
+        settings: {
+          'import/resolver': {
+            typescript: {
+              alwaysTryTypes: true,
+            },
+          },
+        },
       }
     : null,
 

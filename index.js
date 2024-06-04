@@ -134,11 +134,15 @@ export const config = [
   // JS and JSX files
   {
     files: ['**/*.js?(x)'],
+    // most of these rules are useful for JS but not TS because TS handles these better
     rules: {
-      // most of these rules are useful for JS but not TS because TS handles these better
-      // if it weren't for https://github.com/import-js/eslint-plugin-import/issues/2132
-      // we could enable this :(
-      // 'import/no-unresolved': ERROR,
+      // Blocked by https://github.com/import-js/eslint-plugin-import/issues/2132
+      // 'import/no-unresolved': [
+      //   ERROR,
+      //   {
+      //     ignore: ['^#icons/icon', '^~/icons/icon', './icons-sprite.svg'],
+      //   },
+      // ],
       'no-unused-vars': [
         WARN,
         {

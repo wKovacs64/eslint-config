@@ -66,14 +66,7 @@ export const config = [
             { pattern: '#*/**', group: 'internal' },
             { pattern: '~/**', group: 'internal' },
           ],
-          groups: [
-            'builtin',
-            'external',
-            'internal',
-            'parent',
-            'sibling',
-            'index',
-          ],
+          groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
         },
       ],
     },
@@ -281,8 +274,7 @@ export const config = [
         files: testFiles,
         ignores: [...playwrightFiles],
         plugins: {
-          'testing-library': (await import('eslint-plugin-testing-library'))
-            .default,
+          'testing-library': (await import('eslint-plugin-testing-library')).default,
         },
         rules: {
           // 'testing-library/await-async-events': ERROR,

@@ -26,7 +26,7 @@ const hasPlaywright = await has('playwright');
 
 const vitestFiles = ['**/__tests__/**/*', '**/*.test.*'];
 const testFiles = ['**/tests/**', '**/#tests/**', ...vitestFiles];
-const playwrightFiles = ['**/playwright/tests/**'];
+const playwrightFiles = ['**/playwright/**/*.(spec|test).*'];
 
 export const config = [
   {

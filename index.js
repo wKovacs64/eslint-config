@@ -184,15 +184,15 @@ export const config = [
             },
           ],
           '@typescript-eslint/consistent-type-definitions': OFF,
-          'import/consistent-type-specifier-style': [WARN, 'prefer-inline'],
-          '@typescript-eslint/consistent-type-imports': [
-            ERROR,
-            {
-              prefer: 'type-imports',
-              disallowTypeAnnotations: true,
-              fixStyle: 'inline-type-imports',
-            },
-          ],
+          // Note: use this rule _OR_ verbatimModuleSyntax in tsconfig.json - not both
+          // '@typescript-eslint/consistent-type-imports': [
+          //   ERROR,
+          //   {
+          //     prefer: 'type-imports',
+          //     disallowTypeAnnotations: true,
+          //     fixStyle: 'inline-type-imports',
+          //   },
+          // ],
           '@typescript-eslint/explicit-module-boundary-types': OFF,
           '@typescript-eslint/naming-convention': [
             ERROR,

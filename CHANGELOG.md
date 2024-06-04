@@ -1,5 +1,13 @@
 # Change Log
 
+## 7.2.1
+
+### Patch Changes
+
+- [#17](https://github.com/wKovacs64/eslint-config/pull/17) [`f771d66`](https://github.com/wKovacs64/eslint-config/commit/f771d664b59f0bac87f4f9306796b3cd6575017d) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Add `package.json` to package exports.
+
+- [#19](https://github.com/wKovacs64/eslint-config/pull/19) [`b3847b3`](https://github.com/wKovacs64/eslint-config/commit/b3847b30e4736758e75af0758b2a88f78953c8c7) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Disable `@typescript-eslint/consistent-type-imports` rule as it conflicts with `verbatimModuleSyntax` in `tsconfig.json`. Disable `import/consistent-type-specifier-style` rule as well.
+
 ## 7.2.0
 
 ### Minor Changes

@@ -99,6 +99,7 @@ export const config = [
               unnamedComponents: 'arrow-function',
             },
           ],
+          'react/react-in-jsx-scope': OFF,
           'react/prop-types': OFF,
           'jsx-a11y/label-has-associated-control': [
             ERROR,

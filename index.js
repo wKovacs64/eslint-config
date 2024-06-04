@@ -116,8 +116,7 @@ export const config = [
       }
     : null,
 
-  // react-hook rules are applicable in ts/js/tsx/jsx, but only with React as a
-  // dep
+  // react-hook rules are applicable in ts/js/tsx/jsx, but only with React as a dep
   hasReact
     ? {
         files: ['**/*.ts?(x)', '**/*.js?(x)'],
@@ -131,9 +130,9 @@ export const config = [
       }
     : null,
 
-  // JS and JSX files
+  // JS, JSX, and CJS files
   {
-    files: ['**/*.js?(x)'],
+    files: ['**/*.{js,jsx,cjs}'],
     // most of these rules are useful for JS but not TS because TS handles these better
     rules: {
       // Blocked by https://github.com/import-js/eslint-plugin-import/issues/2132

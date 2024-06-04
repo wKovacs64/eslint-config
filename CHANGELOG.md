@@ -1,5 +1,11 @@
 # Change Log
 
+## 7.2.0
+
+### Minor Changes
+
+- [#15](https://github.com/wKovacs64/eslint-config/pull/15) [`1346c39`](https://github.com/wKovacs64/eslint-config/commit/1346c39349e41e7159eb670dd160fc78c74be021) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Apply JS-specific rules to `.cjs` files too.
+
 ## 7.1.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # Change Log
 
+## 7.2.2
+
+### Patch Changes
+
+- [#20](https://github.com/wKovacs64/eslint-config/pull/20) [`a04e4b4`](https://github.com/wKovacs64/eslint-config/commit/a04e4b460a0a5c8e8fd4a26cd6baca21d69587f1) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Apply Playwright rules when `@playwright/test` is present rather than `playwright`.
+
 ## 7.2.1
 
 ### Patch Changes

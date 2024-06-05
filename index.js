@@ -24,7 +24,7 @@ const hasReact = await has('react');
 const hasTestingLibrary = await has('@testing-library/dom');
 const hasJestDom = await has('@testing-library/jest-dom');
 const hasVitest = await has('vitest');
-const hasPlaywright = await has('playwright');
+const hasPlaywright = await has('@playwright/test');
 
 const vitestFiles = ['**/__tests__/**/*', '**/*.test.*'];
 const testFiles = ['**/tests/**', '**/#tests/**', ...vitestFiles];

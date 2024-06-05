@@ -2,6 +2,7 @@
 //
 // Forked from https://github.com/epicweb-dev/config
 //
+import resolveFrom from 'resolve-from';
 import globals from 'globals';
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
@@ -13,18 +14,16 @@ const ERROR = 'error';
 const WARN = 'warn';
 const OFF = 'off';
 
-const has = (pkg) =>
-  import(pkg).then(
-    () => true,
-    () => false,
-  );
+function has(pkgName) {
+  return Boolean(resolveFrom.silent(process.cwd(), pkgName));
+}
 
-const hasTypeScript = await has('typescript');
-const hasReact = await has('react');
-const hasTestingLibrary = await has('@testing-library/dom');
-const hasJestDom = await has('@testing-library/jest-dom');
-const hasVitest = await has('vitest');
-const hasPlaywright = await has('@playwright/test');
+const hasTypeScript = has('typescript');
+const hasReact = has('react');
+const hasTestingLibrary = has('@testing-library/dom');
+const hasJestDom = has('@testing-library/jest-dom');
+const hasVitest = has('vitest');
+const hasPlaywright = has('@playwright/test');
 
 const vitestFiles = ['**/__tests__/**/*', '**/*.test.*'];
 const testFiles = ['**/tests/**', '**/#tests/**', ...vitestFiles];

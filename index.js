@@ -2,7 +2,6 @@
 //
 // Forked from https://github.com/epicweb-dev/config
 //
-import resolveFrom from 'resolve-from';
 import globals from 'globals';
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
@@ -15,7 +14,12 @@ const WARN = 'warn';
 const OFF = 'off';
 
 function has(pkgName) {
-  return Boolean(resolveFrom.silent(process.cwd(), pkgName));
+  try {
+    import.meta.resolve(pkgName, import.meta.url);
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 const hasTypeScript = has('typescript');

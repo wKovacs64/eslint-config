@@ -1,5 +1,11 @@
 # Change Log
 
+## 7.2.4
+
+### Patch Changes
+
+- [#24](https://github.com/wKovacs64/eslint-config/pull/24) [`89f27f9`](https://github.com/wKovacs64/eslint-config/commit/89f27f9644fb1920985140865b5299d8dedd71fe) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Use the platform to perform package detection (and remove the `resolve-from` dependency).
+
 ## 7.2.3
 
 ### Patch Changes

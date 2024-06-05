@@ -160,108 +160,106 @@ export const config = [
         // TODO: figure out how to switch to type-checked configs
         ...tseslint.configs.recommended,
         ...tseslint.configs.stylistic,
+        {
+          files: ['**/*.ts?(x)'],
+          languageOptions: {
+            parserOptions: {
+              parser: tseslint.parser,
+              projectService: true,
+            },
+          },
+          plugins: {
+            '@typescript-eslint': tseslint.plugin,
+          },
+          rules: {
+            '@typescript-eslint/ban-ts-comment': OFF,
+            '@typescript-eslint/consistent-type-assertions': [
+              ERROR,
+              {
+                assertionStyle: 'as',
+                objectLiteralTypeAssertions: 'allow-as-parameter',
+              },
+            ],
+            '@typescript-eslint/consistent-type-definitions': OFF,
+            // Note: use this rule _OR_ verbatimModuleSyntax in tsconfig.json - not both
+            // '@typescript-eslint/consistent-type-imports': [
+            //   ERROR,
+            //   {
+            //     prefer: 'type-imports',
+            //     disallowTypeAnnotations: true,
+            //     fixStyle: 'inline-type-imports',
+            //   },
+            // ],
+            '@typescript-eslint/explicit-module-boundary-types': OFF,
+            '@typescript-eslint/naming-convention': [
+              ERROR,
+              {
+                selector: 'typeLike',
+                format: ['PascalCase'],
+                custom: { regex: '^I[A-Z]', match: false },
+              },
+            ],
+            '@typescript-eslint/no-confusing-void-expression': [
+              ERROR,
+              {
+                ignoreArrowShorthand: true,
+              },
+            ],
+            '@typescript-eslint/no-explicit-any': OFF,
+            '@typescript-eslint/no-floating-promises': [
+              ERROR,
+              {
+                ignoreIIFE: true,
+              },
+            ],
+            '@typescript-eslint/no-import-type-side-effects': ERROR,
+            'no-invalid-this': OFF,
+            '@typescript-eslint/no-invalid-this': ERROR,
+            'no-redeclare': OFF,
+            '@typescript-eslint/no-non-null-assertion': OFF,
+            '@typescript-eslint/no-redeclare': ERROR,
+            'no-shadow': OFF,
+            '@typescript-eslint/no-shadow': ERROR,
+            '@typescript-eslint/no-unnecessary-type-constraint': 'warn',
+            '@typescript-eslint/no-unused-vars': [
+              ERROR,
+              {
+                vars: 'all',
+                args: 'after-used',
+                argsIgnorePattern: '^_',
+                ignoreRestSiblings: true,
+              },
+            ],
+            'no-use-before-define': OFF,
+            '@typescript-eslint/no-use-before-define': [
+              ERROR,
+              {
+                functions: false,
+                classes: true,
+                variables: true,
+              },
+            ],
+            '@typescript-eslint/prefer-nullish-coalescing': OFF,
+            '@typescript-eslint/restrict-template-expressions': [
+              ERROR,
+              {
+                allowBoolean: true,
+                allowNullish: true,
+              },
+            ],
+            '@typescript-eslint/require-await': OFF,
+            '@typescript-eslint/unified-signatures': 'warn',
+          },
+          settings: {
+            'import/resolver': {
+              typescript: {
+                alwaysTryTypes: true,
+              },
+            },
+          },
+        },
       ]
     : []),
-  hasTypeScript
-    ? {
-        files: ['**/*.ts?(x)'],
-        languageOptions: {
-          parserOptions: {
-            parser: tseslint.parser,
-            projectService: true,
-          },
-        },
-        plugins: {
-          '@typescript-eslint': tseslint.plugin,
-        },
-        rules: {
-          '@typescript-eslint/ban-ts-comment': OFF,
-          '@typescript-eslint/consistent-type-assertions': [
-            ERROR,
-            {
-              assertionStyle: 'as',
-              objectLiteralTypeAssertions: 'allow-as-parameter',
-            },
-          ],
-          '@typescript-eslint/consistent-type-definitions': OFF,
-          // Note: use this rule _OR_ verbatimModuleSyntax in tsconfig.json - not both
-          // '@typescript-eslint/consistent-type-imports': [
-          //   ERROR,
-          //   {
-          //     prefer: 'type-imports',
-          //     disallowTypeAnnotations: true,
-          //     fixStyle: 'inline-type-imports',
-          //   },
-          // ],
-          '@typescript-eslint/explicit-module-boundary-types': OFF,
-          '@typescript-eslint/naming-convention': [
-            ERROR,
-            {
-              selector: 'typeLike',
-              format: ['PascalCase'],
-              custom: { regex: '^I[A-Z]', match: false },
-            },
-          ],
-          '@typescript-eslint/no-confusing-void-expression': [
-            ERROR,
-            {
-              ignoreArrowShorthand: true,
-            },
-          ],
-          '@typescript-eslint/no-explicit-any': OFF,
-          '@typescript-eslint/no-floating-promises': [
-            ERROR,
-            {
-              ignoreIIFE: true,
-            },
-          ],
-          '@typescript-eslint/no-import-type-side-effects': ERROR,
-          'no-invalid-this': OFF,
-          '@typescript-eslint/no-invalid-this': ERROR,
-          'no-redeclare': OFF,
-          '@typescript-eslint/no-non-null-assertion': OFF,
-          '@typescript-eslint/no-redeclare': ERROR,
-          'no-shadow': OFF,
-          '@typescript-eslint/no-shadow': ERROR,
-          '@typescript-eslint/no-unnecessary-type-constraint': 'warn',
-          '@typescript-eslint/no-unused-vars': [
-            ERROR,
-            {
-              vars: 'all',
-              args: 'after-used',
-              argsIgnorePattern: '^_',
-              ignoreRestSiblings: true,
-            },
-          ],
-          'no-use-before-define': OFF,
-          '@typescript-eslint/no-use-before-define': [
-            ERROR,
-            {
-              functions: false,
-              classes: true,
-              variables: true,
-            },
-          ],
-          '@typescript-eslint/prefer-nullish-coalescing': OFF,
-          '@typescript-eslint/restrict-template-expressions': [
-            ERROR,
-            {
-              allowBoolean: true,
-              allowNullish: true,
-            },
-          ],
-          '@typescript-eslint/require-await': OFF,
-          '@typescript-eslint/unified-signatures': 'warn',
-        },
-        settings: {
-          'import/resolver': {
-            typescript: {
-              alwaysTryTypes: true,
-            },
-          },
-        },
-      }
-    : null,
 
   // This assumes test files are those which are in the test directory or have
   // *.test.* in the filename. If a file doesn't match this assumption, then it

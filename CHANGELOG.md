@@ -1,5 +1,11 @@
 # Change Log
 
+## 7.2.3
+
+### Patch Changes
+
+- [#22](https://github.com/wKovacs64/eslint-config/pull/22) [`a179a07`](https://github.com/wKovacs64/eslint-config/commit/a179a071a581e24e1fea61aa8e16914bbad0cce6) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Fix detection of installed packages in consuming projects.
+
 ## 7.2.2
 
 ### Patch Changes

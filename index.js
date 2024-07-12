@@ -1,8 +1,8 @@
-// @ts-check
 //
 // Forked from https://github.com/epicweb-dev/config
 //
 import globals from 'globals';
+import { fixupPluginRules } from '@eslint/compat';
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import reactPlugin from 'eslint-plugin-react';
@@ -31,7 +31,7 @@ const hasPlaywright = has('@playwright/test');
 
 const vitestFiles = ['**/__tests__/**/*', '**/*.test.*'];
 const testFiles = ['**/tests/**', '**/#tests/**', ...vitestFiles];
-const playwrightFiles = ['**/playwright/**/*.(spec|test).*'];
+const playwrightFiles = ['**/playwright/**/*.spec.*'];
 
 export const config = [
   {
@@ -124,7 +124,7 @@ export const config = [
     ? {
         files: ['**/*.ts?(x)', '**/*.js?(x)'],
         plugins: {
-          'react-hooks': (await import('eslint-plugin-react-hooks')).default,
+          'react-hooks': fixupPluginRules(await import('eslint-plugin-react-hooks')),
         },
         rules: {
           'react-hooks/rules-of-hooks': ERROR,
@@ -290,35 +290,37 @@ export const config = [
         files: testFiles,
         ignores: [...playwrightFiles],
         plugins: {
-          'testing-library': (await import('eslint-plugin-testing-library')).default,
+          'testing-library': fixupPluginRules(
+            (await import('eslint-plugin-testing-library')).default,
+          ),
         },
         rules: {
-          // 'testing-library/await-async-events': ERROR,
-          // 'testing-library/await-async-queries': ERROR,
-          // 'testing-library/await-async-utils': ERROR,
-          // 'testing-library/consistent-data-testid': OFF,
-          // 'testing-library/no-await-sync-events': ERROR,
-          // 'testing-library/no-await-sync-queries': ERROR,
-          // 'testing-library/no-container': ERROR,
-          // 'testing-library/no-debugging-utils': OFF,
-          // 'testing-library/no-dom-import': [ERROR, 'react'],
-          // 'testing-library/no-global-regexp-flag-in-query': ERROR,
-          // 'testing-library/no-manual-cleanup': ERROR,
-          // 'testing-library/no-node-access': ERROR,
-          // 'testing-library/no-promise-in-fire-event': ERROR,
-          // 'testing-library/no-render-in-lifecycle': ERROR,
+          'testing-library/await-async-events': ERROR,
+          'testing-library/await-async-queries': ERROR,
+          'testing-library/await-async-utils': ERROR,
+          'testing-library/consistent-data-testid': OFF,
+          'testing-library/no-await-sync-events': ERROR,
+          'testing-library/no-await-sync-queries': ERROR,
+          'testing-library/no-container': ERROR,
+          'testing-library/no-debugging-utils': OFF,
+          'testing-library/no-dom-import': [ERROR, 'react'],
+          'testing-library/no-global-regexp-flag-in-query': ERROR,
+          'testing-library/no-manual-cleanup': ERROR,
+          'testing-library/no-node-access': ERROR,
+          'testing-library/no-promise-in-fire-event': ERROR,
+          'testing-library/no-render-in-lifecycle': ERROR,
           'testing-library/no-unnecessary-act': ERROR,
-          // 'testing-library/no-wait-for-multiple-assertions': ERROR,
+          'testing-library/no-wait-for-multiple-assertions': ERROR,
           'testing-library/no-wait-for-side-effects': ERROR,
-          // 'testing-library/no-wait-for-snapshot': ERROR,
-          // 'testing-library/prefer-explicit-assert': ERROR,
+          'testing-library/no-wait-for-snapshot': ERROR,
+          'testing-library/prefer-explicit-assert': ERROR,
           'testing-library/prefer-find-by': ERROR,
-          // 'testing-library/prefer-presence-queries': ERROR,
-          // 'testing-library/prefer-query-by-disappearance': ERROR,
-          // 'testing-library/prefer-query-matchers': OFF,
-          // 'testing-library/prefer-screen-queries': ERROR,
-          // 'testing-library/prefer-user-event': ERROR,
-          // 'testing-library/render-result-naming-convention': ERROR,
+          'testing-library/prefer-presence-queries': ERROR,
+          'testing-library/prefer-query-by-disappearance': ERROR,
+          'testing-library/prefer-query-matchers': OFF,
+          'testing-library/prefer-screen-queries': ERROR,
+          'testing-library/prefer-user-event': ERROR,
+          'testing-library/render-result-naming-convention': ERROR,
         },
       }
     : null,

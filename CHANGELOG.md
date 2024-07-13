@@ -1,5 +1,17 @@
 # Change Log
 
+## 7.2.5
+
+### Patch Changes
+
+- [#29](https://github.com/wKovacs64/eslint-config/pull/29) [`d9e9528`](https://github.com/wKovacs64/eslint-config/commit/d9e9528306993e58f416c4ee0ef7c3d2cc10e9e9) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Fix `eslint-plugin-react-hooks` and `eslint-plugin-testing-library` consumption with `@eslint/compat`. This should also enable ESLint v9 compatibility (untested).
+
+- [#28](https://github.com/wKovacs64/eslint-config/pull/28) [`93fa45f`](https://github.com/wKovacs64/eslint-config/commit/93fa45f05090eb1b18bcc0aa8840c347533b23b7) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update `@eslint/js` to v9.7.0, `eslint-plugin-jsx-a11y` to v6.9.0, `eslint-plugin-react` to v7.34.3, and `globals` to v15.8.0.
+
+- [#26](https://github.com/wKovacs64/eslint-config/pull/26) [`a783712`](https://github.com/wKovacs64/eslint-config/commit/a7837128394bc8be4fb8db58997d624c62fb0565) Thanks [@renovate](https://github.com/apps/renovate)! - Update `eslint-plugin-import-x` to v3.
+
+- [#30](https://github.com/wKovacs64/eslint-config/pull/30) [`79eea98`](https://github.com/wKovacs64/eslint-config/commit/79eea98aff6a6a79fba441e2311e12ff33744e32) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update `typescript-eslint` to v8.0.0-alpha.41. May contain some minor breaking changes, see https://typescript-eslint.io/blog/announcing-typescript-eslint-v8-beta if necessary.
+
 ## 7.2.4
 
 ### Patch Changes

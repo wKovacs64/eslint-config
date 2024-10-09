@@ -1,5 +1,11 @@
 # Change Log
 
+## 7.3.0
+
+### Minor Changes
+
+- [#31](https://github.com/wKovacs64/eslint-config/pull/31) [`36a47e3`](https://github.com/wKovacs64/eslint-config/commit/36a47e3d60fbc5b38fe4413841340c7676625d83) Thanks [@renovate](https://github.com/apps/renovate)! - Update `eslint-plugin-import-x` to v4.
+
 ## 7.2.5
 
 ### Patch Changes

@@ -1,5 +1,31 @@
 # Change Log
 
+## 7.3.0
+
+### Minor Changes
+
+- [#31](https://github.com/wKovacs64/eslint-config/pull/31) [`36a47e3`](https://github.com/wKovacs64/eslint-config/commit/36a47e3d60fbc5b38fe4413841340c7676625d83) Thanks [@renovate](https://github.com/apps/renovate)! - Update `eslint-plugin-import-x` to v4.
+
+### Patch Changes
+
+- [#35](https://github.com/wKovacs64/eslint-config/pull/35) [`f4df1c7`](https://github.com/wKovacs64/eslint-config/commit/f4df1c718d01cb633938cb8fefa24d7378483ddb) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update several dependencies.
+
+  ```
+  @eslint/compat                          ^1.1.1  →    ~1.1.1
+  @eslint/js                              ^9.7.0  →   ^9.12.0
+  eslint-plugin-import-x                  ^4.0.0  →    ^4.3.1
+  eslint-plugin-jsx-a11y                  ^6.9.0  →   ^6.10.0
+  eslint-plugin-playwright                ^1.6.2  →    ^1.7.0
+  eslint-plugin-react                    ^7.34.3  →   ^7.37.1
+  eslint-plugin-testing-library           ^6.2.2  →    ^6.3.0
+  globals                                ^15.8.0  →  ^15.11.0
+  typescript-eslint              ^8.0.0-alpha.41  →    ^8.9.0
+  ```
+
+- [#34](https://github.com/wKovacs64/eslint-config/pull/34) [`b4cd99f`](https://github.com/wKovacs64/eslint-config/commit/b4cd99f8f2e4da87f7a336f3df2fbec790cdf376) Thanks [@renovate](https://github.com/apps/renovate)! - Update `eslint-plugin-react-hooks` to v5. Ignore all Playwright files as they conventionally name one of their functions `use`, which triggers false positives.
+
+- [#33](https://github.com/wKovacs64/eslint-config/pull/33) [`9780245`](https://github.com/wKovacs64/eslint-config/commit/97802454e35a514612e4a910005117c9af44d915) Thanks [@renovate](https://github.com/apps/renovate)! - Replace `eslint-plugin-vitest` with `@vitest/eslint-plugin`.
+
 ## 7.2.5
 
 ### Patch Changes

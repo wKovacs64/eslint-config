@@ -31,7 +31,8 @@ const hasPlaywright = has('@playwright/test');
 
 const vitestFiles = ['**/__tests__/**/*', '**/*.test.*'];
 const testFiles = ['**/tests/**', '**/#tests/**', ...vitestFiles];
-const playwrightFiles = ['**/playwright/**/*.spec.*'];
+const allPlaywrightFiles = ['**/playwright/**'];
+const playwrightTestFiles = ['**/playwright/**/*.spec.*'];
 
 export const config = [
   {
@@ -123,8 +124,9 @@ export const config = [
   hasReact
     ? {
         files: ['**/*.ts?(x)', '**/*.js?(x)'],
+        ignores: [...allPlaywrightFiles],
         plugins: {
-          'react-hooks': fixupPluginRules(await import('eslint-plugin-react-hooks')),
+          'react-hooks': (await import('eslint-plugin-react-hooks')).default,
         },
         rules: {
           'react-hooks/rules-of-hooks': ERROR,
@@ -288,7 +290,7 @@ export const config = [
   hasTestingLibrary
     ? {
         files: testFiles,
-        ignores: [...playwrightFiles],
+        ignores: [...playwrightTestFiles],
         plugins: {
           'testing-library': fixupPluginRules(
             (await import('eslint-plugin-testing-library')).default,
@@ -328,7 +330,7 @@ export const config = [
   hasJestDom
     ? {
         files: testFiles,
-        ignores: [...playwrightFiles],
+        ignores: [...playwrightTestFiles],
         plugins: {
           'jest-dom': (await import('eslint-plugin-jest-dom')).default,
         },
@@ -351,7 +353,7 @@ export const config = [
   hasVitest
     ? {
         files: testFiles,
-        ignores: [...playwrightFiles],
+        ignores: [...playwrightTestFiles],
         plugins: {
           vitest: (await import('eslint-plugin-vitest')).default,
         },
@@ -365,7 +367,7 @@ export const config = [
 
   hasPlaywright
     ? {
-        files: playwrightFiles,
+        files: playwrightTestFiles,
         ...playwright.configs['flat/recommended'],
       }
     : null,

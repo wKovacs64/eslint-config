@@ -1,5 +1,11 @@
 # Change Log
 
+## 7.3.1
+
+### Patch Changes
+
+- [#37](https://github.com/wKovacs64/eslint-config/pull/37) [`a1c4f5f`](https://github.com/wKovacs64/eslint-config/commit/a1c4f5f9897342d7e4ecd5b03d17d1696fd6990e) Thanks [@renovate](https://github.com/apps/renovate)! - Update `eslint-plugin-playwright` to v2.
+
 ## 7.3.0
 
 ### Minor Changes

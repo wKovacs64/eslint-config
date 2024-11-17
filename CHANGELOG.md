@@ -1,5 +1,25 @@
 # Change Log
 
+## 7.3.1
+
+### Patch Changes
+
+- [#40](https://github.com/wKovacs64/eslint-config/pull/40) [`e3acf85`](https://github.com/wKovacs64/eslint-config/commit/e3acf8518be8726f0f7e1dfc0df9e3b007cf82a0) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update several dependencies.
+
+  ```
+  @eslint/js                      ^9.12.0  →   ^9.15.0
+  @vitest/eslint-plugin            ^1.1.7  →   ^1.1.10
+  eslint-plugin-import-x           ^4.3.1  →    ^4.4.2
+  eslint-plugin-jsx-a11y          ^6.10.0  →   ^6.10.2
+  eslint-plugin-playwright         ^2.0.0  →    ^2.0.1
+  eslint-plugin-react             ^7.37.1  →   ^7.37.2
+  eslint-plugin-testing-library    ^6.3.0  →    ^6.4.0
+  globals                        ^15.11.0  →  ^15.12.0
+  typescript-eslint                ^8.9.0  →   ^8.14.0
+  ```
+
+- [#37](https://github.com/wKovacs64/eslint-config/pull/37) [`a1c4f5f`](https://github.com/wKovacs64/eslint-config/commit/a1c4f5f9897342d7e4ecd5b03d17d1696fd6990e) Thanks [@renovate](https://github.com/apps/renovate)! - Update `eslint-plugin-playwright` to v2.
+
 ## 7.3.0
 
 ### Minor Changes

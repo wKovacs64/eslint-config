@@ -13,4 +13,5 @@ eslint-plugin-playwright         ^2.0.0  →    ^2.0.1
 eslint-plugin-react             ^7.37.1  →   ^7.37.2
 eslint-plugin-testing-library    ^6.3.0  →    ^6.4.0
 globals                        ^15.11.0  →  ^15.12.0
+typescript-eslint                ^8.9.0  →   ^8.14.0
 ```

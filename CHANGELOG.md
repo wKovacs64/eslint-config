@@ -1,5 +1,24 @@
 # Change Log
 
+## 7.4.0
+
+### Minor Changes
+
+- [#6](https://github.com/wKovacs64/eslint-config/pull/6) [`0be1c5f`](https://github.com/wKovacs64/eslint-config/commit/0be1c5fef4e00b16893626bd115850012e45b351) Thanks [@renovate](https://github.com/apps/renovate)! - Update `eslint` to v9. The config now supports ESLint v9 in consuming projects.
+
+### Patch Changes
+
+- [#41](https://github.com/wKovacs64/eslint-config/pull/41) [`60c83cb`](https://github.com/wKovacs64/eslint-config/commit/60c83cb3acb4c66a563181d14b2a1f5a59a08609) Thanks [@renovate](https://github.com/apps/renovate)! - Update `eslint-plugin-testing-library` to v7.
+
+- [#42](https://github.com/wKovacs64/eslint-config/pull/42) [`dc1b73b`](https://github.com/wKovacs64/eslint-config/commit/dc1b73bf80cab31299dcfac1a417719ea7e48505) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update several dependencies.
+
+  ```
+  eslint-plugin-import-x     ^4.4.2  →   ^4.4.3
+  eslint-plugin-jest-dom     ^5.4.0  →   ^5.5.0
+  eslint-plugin-playwright   ^2.0.1  →   ^2.1.0
+  typescript-eslint         ^8.14.0  →  ^8.15.0
+  ```
+
 ## 7.3.1
 
 ### Patch Changes

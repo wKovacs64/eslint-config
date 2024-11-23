@@ -2,7 +2,6 @@
 // Forked from https://github.com/epicweb-dev/config
 //
 import globals from 'globals';
-import { fixupPluginRules } from '@eslint/compat';
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import reactPlugin from 'eslint-plugin-react';
@@ -292,9 +291,7 @@ export const config = [
         files: testFiles,
         ignores: [...playwrightTestFiles],
         plugins: {
-          'testing-library': fixupPluginRules(
-            (await import('eslint-plugin-testing-library')).default,
-          ),
+          'testing-library': (await import('eslint-plugin-testing-library')).default,
         },
         rules: {
           'testing-library/await-async-events': ERROR,

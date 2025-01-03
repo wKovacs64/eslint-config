@@ -1,5 +1,26 @@
 # Change Log
 
+## 7.5.0
+
+### Minor Changes
+
+- [#48](https://github.com/wKovacs64/eslint-config/pull/48) [`fd170ef`](https://github.com/wKovacs64/eslint-config/commit/fd170efb7ecb595df5236c72152345bf3c2ae0b9) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Ignore the `.react-router` directory. This effectively adds support for React Router v7.
+
+### Patch Changes
+
+- [#46](https://github.com/wKovacs64/eslint-config/pull/46) [`69c5e9e`](https://github.com/wKovacs64/eslint-config/commit/69c5e9e1937145257c8a3ce59bb361d6dbb835da) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update various dependencies.
+
+  ```
+  @eslint/js                      ^9.15.0  →   ^9.17.0
+  @vitest/eslint-plugin           ^1.1.10  →   ^1.1.24
+  eslint-plugin-import-x           ^4.4.3  →    ^4.6.1
+  eslint-plugin-react             ^7.37.2  →   ^7.37.3
+  eslint-plugin-react-hooks        ^5.0.0  →    ^5.1.0
+  eslint-plugin-testing-library    ^7.0.0  →    ^7.1.1
+  globals                        ^15.12.0  →  ^15.14.0
+  typescript-eslint               ^8.15.0  →   ^8.19.0
+  ```
+
 ## 7.4.0
 
 ### Minor Changes

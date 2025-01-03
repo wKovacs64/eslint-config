@@ -37,6 +37,7 @@ export const config = [
   {
     ignores: [
       '**/.cache/**',
+      '**/.react-router/**',
       '**/node_modules/**',
       '**/build/**',
       '**/public/build/**',

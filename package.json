@@ -67,7 +67,7 @@
     "@changesets/cli": "2.27.11",
     "@types/eslint__js": "8.42.3",
     "@types/node": "22.10.5",
-    "@types/react": "19.0.5",
+    "@types/react": "19.0.6",
     "@types/react-dom": "19.0.3",
     "@wkovacs64/prettier-config": "4.1.1",
     "eslint": "9.18.0",

@@ -1,5 +1,21 @@
 # Change Log
 
+## 7.5.1
+
+### Patch Changes
+
+- [#52](https://github.com/wKovacs64/eslint-config/pull/52) [`2c9061a`](https://github.com/wKovacs64/eslint-config/commit/2c9061a4492b192392d58d84445e9d715fd80a1b) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update various dependencies.
+
+  ```
+  @eslint/js                ^9.17.0  →  ^9.21.0
+  @vitest/eslint-plugin     ^1.1.24  →  ^1.1.31
+  eslint-plugin-playwright   ^2.1.0  →   ^2.2.0
+  eslint-plugin-react       ^7.37.3  →  ^7.37.4
+  typescript-eslint         ^8.19.0  →  ^8.24.1
+  ```
+
+- [#49](https://github.com/wKovacs64/eslint-config/pull/49) [`985e03c`](https://github.com/wKovacs64/eslint-config/commit/985e03c9650f06a466f6f18c72162497e0538041) Thanks [@renovate](https://github.com/apps/renovate)! - Update `globals` to v16.
+
 ## 7.5.0
 
 ### Minor Changes

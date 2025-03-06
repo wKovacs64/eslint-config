@@ -1,5 +1,17 @@
 # Change Log
 
+## 7.5.2
+
+### Patch Changes
+
+- [#54](https://github.com/wKovacs64/eslint-config/pull/54) [`523b07c`](https://github.com/wKovacs64/eslint-config/commit/523b07c5913845ec65e7289bd83c14e2357ddc25) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update various dependencies.
+
+  ```
+  @vitest/eslint-plugin      ^1.1.31  →  ^1.1.36
+  eslint-plugin-react-hooks   ^5.1.0  →   ^5.2.0
+  typescript-eslint          ^8.24.1  →  ^8.26.0
+  ```
+
 ## 7.5.1
 
 ### Patch Changes

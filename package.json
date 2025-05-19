@@ -65,7 +65,7 @@
   "devDependencies": {
     "@changesets/changelog-github": "0.5.1",
     "@changesets/cli": "2.29.4",
-    "@types/node": "22.15.18",
+    "@types/node": "22.15.19",
     "@types/react": "19.1.4",
     "@types/react-dom": "19.1.5",
     "@wkovacs64/prettier-config": "4.1.1",

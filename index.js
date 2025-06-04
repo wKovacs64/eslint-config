@@ -36,6 +36,7 @@ const playwrightTestFiles = ['**/playwright/**/*.spec.*'];
 export const config = [
   {
     ignores: [
+      '**/.astro/**',
       '**/.cache/**',
       '**/.react-router/**',
       '**/node_modules/**',

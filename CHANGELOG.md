@@ -1,5 +1,25 @@
 # Change Log
 
+## 7.6.0
+
+### Minor Changes
+
+- [#56](https://github.com/wKovacs64/eslint-config/pull/56) [`445f83e`](https://github.com/wKovacs64/eslint-config/commit/445f83edf991c48f0d7c8260e95b9f6e2903dc6e) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Ignore `.astro` directory. This effectively adds support for Astro.
+
+### Patch Changes
+
+- [#58](https://github.com/wKovacs64/eslint-config/pull/58) [`2292b7b`](https://github.com/wKovacs64/eslint-config/commit/2292b7bde6255212d5ebcdebb56b21be8eb025ec) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update various dependencies.
+
+  ```
+  @eslint/js                     ^9.21.0  →  ^9.28.0
+  @vitest/eslint-plugin          ^1.1.36  →   ^1.2.1
+  eslint-plugin-import-x          ^4.6.1  →  ^4.15.0
+  eslint-plugin-react            ^7.37.4  →  ^7.37.5
+  eslint-plugin-testing-library   ^7.1.1  →   ^7.3.0
+  globals                        ^16.0.0  →  ^16.2.0
+  typescript-eslint              ^8.26.0  →  ^8.33.1
+  ```
+
 ## 7.5.2
 
 ### Patch Changes

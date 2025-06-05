@@ -1,5 +1,11 @@
 # Change Log
 
+## 7.7.0
+
+### Minor Changes
+
+- [#59](https://github.com/wKovacs64/eslint-config/pull/59) [`aeb42d1`](https://github.com/wKovacs64/eslint-config/commit/aeb42d1f6ecc9d86c911ae539d1fb7ca2d6f7e4a) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Ignore `.vercel` and `.next` directories.
+
 ## 7.6.0
 
 ### Minor Changes

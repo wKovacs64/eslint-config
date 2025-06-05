@@ -39,6 +39,8 @@ export const config = [
       '**/.astro/**',
       '**/.cache/**',
       '**/.react-router/**',
+      '**/.next/**',
+      '**/.vercel/**',
       '**/node_modules/**',
       '**/build/**',
       '**/public/build/**',

@@ -7,6 +7,7 @@ import tseslint from 'typescript-eslint';
 import reactPlugin from 'eslint-plugin-react';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import playwright from 'eslint-plugin-playwright';
+import astro from 'eslint-plugin-astro';
 
 const ERROR = 'error';
 const WARN = 'warn';
@@ -27,6 +28,7 @@ const hasTestingLibrary = has('@testing-library/dom');
 const hasJestDom = has('@testing-library/jest-dom');
 const hasVitest = has('vitest');
 const hasPlaywright = has('@playwright/test');
+const hasAstro = has('astro');
 
 const vitestFiles = ['**/__tests__/**/*', '**/*.test.*'];
 const testFiles = ['**/tests/**', '**/#tests/**', ...vitestFiles];
@@ -365,6 +367,22 @@ export const config = [
         },
       }
     : null,
+
+  // Astro support
+  ...(hasAstro
+    ? [
+        ...astro.configs['flat/recommended'],
+        // No idea why this override is needed as it should inherit from the base config, but for
+        // some reason, enabling the Astro plugin screws that up and it tries to enforce interfaces
+        // over types. 🤷‍♂️
+        {
+          files: ['**/*.astro'],
+          rules: {
+            '@typescript-eslint/consistent-type-definitions': OFF,
+          },
+        },
+      ]
+    : []),
 
   hasPlaywright
     ? {

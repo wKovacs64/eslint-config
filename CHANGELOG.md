@@ -1,5 +1,23 @@
 # Change Log
 
+## 7.8.0
+
+### Minor Changes
+
+- [#61](https://github.com/wKovacs64/eslint-config/pull/61) [`4690abe`](https://github.com/wKovacs64/eslint-config/commit/4690abed7a9fe1139753c9ef7d3a277fb4f40e08) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Add actual Astro support. It was sort of unlocked in v7.6.0 but this adds the `eslint-plugin-astro` plugin with their recommended config.
+
+### Patch Changes
+
+- [#63](https://github.com/wKovacs64/eslint-config/pull/63) [`cf48f5d`](https://github.com/wKovacs64/eslint-config/commit/cf48f5d1b718e6d5d67b15a51cbe51183bb96a32) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update various dependencies.
+
+  ```
+  @eslint/js                     ^9.28.0  →  ^9.29.0
+  @vitest/eslint-plugin           ^1.2.1  →   ^1.2.5
+  eslint-plugin-import-x         ^4.15.0  →  ^4.15.2
+  eslint-plugin-testing-library   ^7.3.0  →   ^7.5.3
+  typescript-eslint              ^8.33.1  →  ^8.34.0
+  ```
+
 ## 7.7.0
 
 ### Minor Changes

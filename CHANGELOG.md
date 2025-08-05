@@ -1,5 +1,23 @@
 # Change Log
 
+## 7.9.0
+
+### Minor Changes
+
+- [#66](https://github.com/wKovacs64/eslint-config/pull/66) [`46902bc`](https://github.com/wKovacs64/eslint-config/commit/46902bcf28bcbf8a7f70ebda15f87a6d3263b598) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update `typescript-eslint` to v8.39.0. This adds support for TypeScript 5.9.
+
+### Patch Changes
+
+- [#68](https://github.com/wKovacs64/eslint-config/pull/68) [`c7f2e62`](https://github.com/wKovacs64/eslint-config/commit/c7f2e62b57c967079c7a717fd301054e92a9fd8a) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update various dependencies.
+
+  ```
+  @vitest/eslint-plugin          ^1.2.5  →   ^1.3.4
+  eslint-plugin-import-x        ^4.15.2  →  ^4.16.1
+  eslint-plugin-playwright       ^2.2.0  →   ^2.2.2
+  eslint-plugin-testing-library  ^7.5.3  →   ^7.6.3
+  globals                       ^16.2.0  →  ^16.3.0
+  ```
+
 ## 7.8.0
 
 ### Minor Changes

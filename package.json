@@ -61,7 +61,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-testing-library": "^7.5.3",
     "globals": "^16.2.0",
-    "typescript-eslint": "^8.34.0"
+    "typescript-eslint": "^8.39.0"
   },
   "devDependencies": {
     "@changesets/changelog-github": "0.5.1",

@@ -1,5 +1,11 @@
 # Change Log
 
+## 7.9.1
+
+### Patch Changes
+
+- [#69](https://github.com/wKovacs64/eslint-config/pull/69) [`7f31165`](https://github.com/wKovacs64/eslint-config/commit/7f3116563cb41f4b94c2a5deabf9ddab00434489) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update `@eslint/js` to v9.32.0.
+
 ## 7.9.0
 
 ### Minor Changes

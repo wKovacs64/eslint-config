@@ -24,13 +24,15 @@ default.
 #### `eslint.config.js`
 
 ```js
+import { defineConfig } from 'eslint/config';
 import baseConfig from '@wkovacs64/eslint-config';
 
-/** @type {import("eslint").Linter.Config[]} */
-const config = [
-  ...baseConfig,
-  // overrides here
-];
+const config = defineConfig([
+  baseConfig,
+  {
+    // your optional overrides here
+  },
+]);
 
 export default config;
 ```

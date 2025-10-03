@@ -1,5 +1,23 @@
 # Change Log
 
+## 7.10.0
+
+### Minor Changes
+
+- [#75](https://github.com/wKovacs64/eslint-config/pull/75) [`f029780`](https://github.com/wKovacs64/eslint-config/commit/f029780167037d44435ed59a8ba215cdf15b5362) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update `eslint-plugin-react-hooks` to v6.
+
+### Patch Changes
+
+- [#75](https://github.com/wKovacs64/eslint-config/pull/75) [`f029780`](https://github.com/wKovacs64/eslint-config/commit/f029780167037d44435ed59a8ba215cdf15b5362) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update various dependencies.
+
+  ```
+  @eslint/js                     ^9.32.0  →  ^9.37.0
+  @vitest/eslint-plugin           ^1.3.4  →  ^1.3.15
+  eslint-plugin-testing-library   ^7.6.3  →  ^7.11.0
+  globals                        ^16.3.0  →  ^16.4.0
+  typescript-eslint              ^8.39.0  →  ^8.45.0
+  ```
+
 ## 7.9.1
 
 ### Patch Changes

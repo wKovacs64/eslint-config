@@ -134,8 +134,25 @@ export const config = [
           'react-hooks': (await import('eslint-plugin-react-hooks')).default,
         },
         rules: {
+          // Core hooks rules
           'react-hooks/rules-of-hooks': ERROR,
           'react-hooks/exhaustive-deps': ERROR,
+          // React Compiler rules
+          'react-hooks/config': ERROR,
+          'react-hooks/error-boundaries': ERROR,
+          'react-hooks/component-hook-factories': ERROR,
+          'react-hooks/gating': ERROR,
+          'react-hooks/globals': ERROR,
+          'react-hooks/immutability': ERROR,
+          'react-hooks/preserve-manual-memoization': ERROR,
+          'react-hooks/purity': ERROR,
+          'react-hooks/refs': ERROR,
+          'react-hooks/set-state-in-effect': ERROR,
+          'react-hooks/set-state-in-render': ERROR,
+          'react-hooks/static-components': ERROR,
+          'react-hooks/unsupported-syntax': ERROR,
+          'react-hooks/use-memo': ERROR,
+          'react-hooks/incompatible-library': ERROR,
         },
       }
     : null,

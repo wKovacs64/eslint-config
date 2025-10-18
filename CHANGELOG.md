@@ -1,5 +1,22 @@
 # Change Log
 
+## 7.11.0
+
+### Minor Changes
+
+- [#73](https://github.com/wKovacs64/eslint-config/pull/73) [`d253419`](https://github.com/wKovacs64/eslint-config/commit/d253419f4851265854400915a5c4cc717046dcbc) Thanks [@renovate](https://github.com/apps/renovate)! - Update `eslint-plugin-react-hooks` to v7 and enable the React Compiler rules.
+
+### Patch Changes
+
+- [#80](https://github.com/wKovacs64/eslint-config/pull/80) [`92dfa53`](https://github.com/wKovacs64/eslint-config/commit/92dfa53a1326d03b3c7911099e330f1634ba7afa) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update various dependencies.
+
+  ```
+  @eslint/js                     ^9.37.0  →  ^9.38.0
+  @vitest/eslint-plugin          ^1.3.15  →  ^1.3.23
+  eslint-plugin-testing-library  ^7.11.0  →  ^7.13.3
+  typescript-eslint              ^8.45.0  →  ^8.46.1
+  ```
+
 ## 7.10.0
 
 ### Minor Changes

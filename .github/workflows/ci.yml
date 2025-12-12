@@ -20,17 +20,20 @@ jobs:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v6
 
+      - name: 📦 Install pnpm
+        uses: pnpm/action-setup@v4
+
       - name: ⎔ Setup node
         uses: actions/setup-node@v6
         with:
-          cache: npm
+          cache: pnpm
           node-version-file: '.nvmrc'
 
       - name: 📥 Install deps
-        run: npm install
+        run: pnpm install
 
       - name: 💅 Format check
-        run: npm run format:check
+        run: pnpm run format:check
 
   lint:
     name: ⬣ ESLint
@@ -39,17 +42,20 @@ jobs:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v6
 
+      - name: 📦 Install pnpm
+        uses: pnpm/action-setup@v4
+
       - name: ⎔ Setup node
         uses: actions/setup-node@v6
         with:
-          cache: npm
+          cache: pnpm
           node-version-file: '.nvmrc'
 
       - name: 📥 Install deps
-        run: npm install
+        run: pnpm install
 
       - name: 🔬 Lint
-        run: npm run lint
+        run: pnpm run lint
 
   typecheck:
     name: ʦ TypeScript
@@ -58,17 +64,20 @@ jobs:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v6
 
+      - name: 📦 Install pnpm
+        uses: pnpm/action-setup@v4
+
       - name: ⎔ Setup node
         uses: actions/setup-node@v6
         with:
-          cache: npm
+          cache: pnpm
           node-version-file: '.nvmrc'
 
       - name: 📥 Install deps
-        run: npm install
+        run: pnpm install
 
       - name: 🔎 Type check
-        run: npm run typecheck
+        run: pnpm run typecheck
 
   test:
     name: 📦 Test
@@ -77,20 +86,23 @@ jobs:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v6
 
+      - name: 📦 Install pnpm
+        uses: pnpm/action-setup@v4
+
       - name: ⎔ Setup node
         uses: actions/setup-node@v6
         with:
-          cache: npm
+          cache: pnpm
           node-version-file: '.nvmrc'
 
       - name: 📥 Install deps
-        run: npm install
+        run: pnpm install
 
       - name: ⏬ Clone a real repository
         run: git clone --single-branch --depth 1 https://github.com/wKovacs64/use-stepper.git ~/example
 
       - name: 📦 Install package in the real repository
-        run: npx yalc publish && cd ~/example && npx yalc add --dev @wkovacs64/eslint-config && npm install --ignore-scripts
+        run: pnpm dlx yalc publish && cd ~/example && pnpm dlx yalc add --dev @wkovacs64/eslint-config && npm install --ignore-scripts
 
       - name: 🔬 Lint the real repository
         run: cd ~/example && npm run lint
@@ -108,21 +120,24 @@ jobs:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v6
 
+      - name: 📦 Install pnpm
+        uses: pnpm/action-setup@v4
+
       - name: ⎔ Setup node
         uses: actions/setup-node@v6
         with:
-          cache: npm
+          cache: pnpm
           node-version-file: '.nvmrc'
 
       - name: 📥 Install deps
-        run: npm install
+        run: pnpm install
 
       - name: 🦋 Create Release Pull Request or Publish to npm
         id: changesets
         uses: changesets/action@v1
         with:
-          version: npm run changeset:version
-          publish: npm run changeset:publish
+          version: pnpm run changeset:version
+          publish: pnpm run changeset:publish
           commit: 'chore: release'
           title: 'chore: release'
         env:

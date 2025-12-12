@@ -102,10 +102,10 @@ jobs:
         run: git clone --single-branch --depth 1 https://github.com/wKovacs64/use-stepper.git ~/example
 
       - name: 📦 Install package in the real repository
-        run: pnpm dlx yalc publish && cd ~/example && pnpm dlx yalc add --dev @wkovacs64/eslint-config && npm install --ignore-scripts
+        run: pnpm pack && cd ~/example && pnpm add --save-dev $GITHUB_WORKSPACE/wkovacs64-eslint-config-*.tgz
 
       - name: 🔬 Lint the real repository
-        run: cd ~/example && npm run lint
+        run: cd ~/example && pnpm run lint
 
   release:
     name: 🚀 Release

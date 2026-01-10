@@ -1,5 +1,5 @@
 ---
-'@wkovacs64/eslint-config': patch
+'@wkovacs64/eslint-config': minor
 ---
 
 Update `globals` to v17.

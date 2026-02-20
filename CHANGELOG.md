@@ -1,5 +1,24 @@
 # Change Log
 
+## 7.13.0
+
+### Minor Changes
+
+- [#93](https://github.com/wKovacs64/eslint-config/pull/93) [`c24a9d8`](https://github.com/wKovacs64/eslint-config/commit/c24a9d849c374f3bb99f4813fc36c37b313a4d20) Thanks [@renovate](https://github.com/apps/renovate)! - Update `eslint` to v10.
+
+### Patch Changes
+
+- [#94](https://github.com/wKovacs64/eslint-config/pull/94) [`655f098`](https://github.com/wKovacs64/eslint-config/commit/655f09828051e40854a87ed76853accf7fee09b6) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update various dependencies.
+
+  ```
+  @vitest/eslint-plugin           ^1.6.6  →   ^1.6.9
+  eslint-plugin-astro             ^1.5.0  →   ^1.6.0
+  eslint-plugin-playwright        ^2.4.1  →   ^2.7.0
+  eslint-plugin-testing-library  ^7.15.4  →  ^7.16.0
+  globals                        ^17.0.0  →  ^17.3.0
+  typescript-eslint              ^8.52.0  →  ^8.56.0
+  ```
+
 ## 7.12.0
 
 ### Minor Changes

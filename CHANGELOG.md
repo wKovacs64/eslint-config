@@ -1,5 +1,20 @@
 # Change Log
 
+## 7.14.0
+
+### Minor Changes
+
+- [#98](https://github.com/wKovacs64/eslint-config/pull/98) [`5a7c270`](https://github.com/wKovacs64/eslint-config/commit/5a7c270f3c33737cff0fcc7369a57253deabddde) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Revert `eslint` to v9. Deps aren't officially ready.
+
+### Patch Changes
+
+- [#96](https://github.com/wKovacs64/eslint-config/pull/96) [`50da219`](https://github.com/wKovacs64/eslint-config/commit/50da219f9cd20e6caa7fca0f003f01e3f5223a3a) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update various dependencies.
+
+  ```
+  eslint-plugin-playwright   ^2.7.0  →   ^2.8.0
+  typescript-eslint         ^8.56.0  →  ^8.56.1
+  ```
+
 ## 7.13.0
 
 ### Minor Changes

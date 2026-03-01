@@ -35,14 +35,13 @@
     "changeset": "changeset",
     "changeset:version": "changeset version && pnpm install",
     "changeset:publish": "changeset publish",
-    "format": "prettier --cache --write .",
-    "format:check": "prettier --cache --check .",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
     "lint": "eslint .",
     "typecheck": "tsc"
   },
   "private": false,
-  "prettier": "@wkovacs64/prettier-config",
-  "publishConfig": {
+"publishConfig": {
     "access": "public"
   },
   "engines": {
@@ -69,9 +68,8 @@
     "@types/node": "24.10.13",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "@wkovacs64/prettier-config": "4.2.4",
     "eslint": "^9.39.3",
-    "prettier": "3.8.1",
+    "oxfmt": "0.35.0",
     "typescript": "5.9.3"
   }
 }

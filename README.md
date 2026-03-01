@@ -24,8 +24,8 @@ default.
 #### `eslint.config.js`
 
 ```js
-import { defineConfig } from 'eslint/config';
-import baseConfig from '@wkovacs64/eslint-config';
+import { defineConfig } from "eslint/config";
+import baseConfig from "@wkovacs64/eslint-config";
 
 const config = defineConfig([
   baseConfig,
@@ -51,12 +51,10 @@ export default config;
 
 [npm-image]: https://img.shields.io/npm/v/@wkovacs64/eslint-config.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/@wkovacs64/eslint-config
-[ci-image]:
-  https://img.shields.io/github/actions/workflow/status/wKovacs64/eslint-config/ci.yml?logo=github&style=flat-square
+[ci-image]: https://img.shields.io/github/actions/workflow/status/wKovacs64/eslint-config/ci.yml?logo=github&style=flat-square
 [ci-url]: https://github.com/wKovacs64/eslint-config/actions?query=workflow%3Aci
 [changesets-image]: https://img.shields.io/badge/maintained%20with-changesets-blue?style=flat-square
 [changesets-url]: https://github.com/changesets/changesets
 [eslint]: https://eslint.org/
-[eslint-sharing]:
-  https://eslint.org/docs/latest/use/configure/configuration-files#using-a-shareable-configuration-package
+[eslint-sharing]: https://eslint.org/docs/latest/use/configure/configuration-files#using-a-shareable-configuration-package
 [eslint-ignores]: https://eslint.org/docs/latest/use/configure/migration-guide#ignoring-files

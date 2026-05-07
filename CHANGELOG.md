@@ -1,5 +1,22 @@
 # Change Log
 
+## 7.14.1
+
+### Patch Changes
+
+- [#104](https://github.com/wKovacs64/eslint-config/pull/104) [`3b8f3ec`](https://github.com/wKovacs64/eslint-config/commit/3b8f3ec2d3edd925e454df74f2fe9ccdba3727a0) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update various dependencies.
+
+  ```
+  @vitest/eslint-plugin           ^1.6.9  →  ^1.6.16
+  eslint-plugin-astro             ^1.6.0  →   ^1.7.0
+  eslint-plugin-import-x         ^4.16.1  →  ^4.16.2
+  eslint-plugin-playwright        ^2.8.0  →  ^2.10.2
+  eslint-plugin-react-hooks       ^7.0.1  →   ^7.1.1
+  eslint-plugin-testing-library  ^7.16.0  →  ^7.16.2
+  globals                        ^17.3.0  →  ^17.6.0
+  typescript-eslint              ^8.56.1  →  ^8.59.2
+  ```
+
 ## 7.14.0
 
 ### Minor Changes

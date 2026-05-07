@@ -1,5 +1,8 @@
 name: 🌐 CD
 
+permissions:
+  contents: read
+
 on:
   push:
   pull_request:
@@ -27,7 +30,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: 📦 Install pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v5
 
       - name: ⎔ Setup node
         uses: actions/setup-node@v6
@@ -39,4 +42,4 @@ jobs:
         run: pnpm install
 
       - name: ⚡ pkg.pr.new
-        run: pnpm dlx pkg-pr-new publish --compact
+        run: pnpm dlx pkg-pr-new publish --compact --commentWithDev --packageManager=pnpm

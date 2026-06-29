@@ -1,5 +1,11 @@
 # Change Log
 
+## 8.0.0
+
+### Major Changes
+
+- [#112](https://github.com/wKovacs64/eslint-config/pull/112) [`a236d53`](https://github.com/wKovacs64/eslint-config/commit/a236d53cfcf8eb1c16ae4a927e544cde02953e29) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update ESLint and related packages to support ESLint 10.
+
 ## 7.14.1
 
 ### Patch Changes

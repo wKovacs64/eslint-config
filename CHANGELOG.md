@@ -1,5 +1,23 @@
 # Change Log
 
+## 8.0.1
+
+### Patch Changes
+
+- [#114](https://github.com/wKovacs64/eslint-config/pull/114) [`f92f4a2`](https://github.com/wKovacs64/eslint-config/commit/f92f4a2b226a62da24fa958c3f0fd74555f54908) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Wrap plugin rules with ESLint compatibility helpers for ESLint 10.
+
+- [#116](https://github.com/wKovacs64/eslint-config/pull/116) [`95b41c2`](https://github.com/wKovacs64/eslint-config/commit/95b41c2359d0bbee2609181a344666c03c5d584e) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update various dependencies.
+
+  ```
+  @eslint/js                ^10.0.0  →  ^10.0.1
+  @vitest/eslint-plugin     ^1.6.16  →  ^1.6.21
+  eslint-plugin-astro        ^2.0.0  →   ^2.1.1
+  eslint-plugin-import-x    ^4.16.2  →  ^4.17.1
+  eslint-plugin-playwright  ^2.10.2  →  ^2.10.4
+  globals                   ^17.6.0  →  ^17.7.0
+  typescript-eslint         ^8.62.0  →  ^8.62.1
+  ```
+
 ## 8.0.0
 
 ### Major Changes

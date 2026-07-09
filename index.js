@@ -1,6 +1,7 @@
 //
 // Forked from https://github.com/epicweb-dev/config
 //
+import { fixupPluginRules } from "@eslint/compat";
 import globals from "globals";
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
@@ -60,7 +61,7 @@ export const config = [
   eslint.configs.recommended,
   {
     plugins: {
-      import: (await import("eslint-plugin-import-x")).default,
+      import: fixupPluginRules((await import("eslint-plugin-import-x")).default),
     },
     languageOptions: {
       globals: {
@@ -88,8 +89,8 @@ export const config = [
     ? {
         files: ["**/*.tsx", "**/*.jsx"],
         plugins: {
-          react: reactPlugin,
-          "jsx-a11y": jsxA11yPlugin,
+          react: fixupPluginRules(reactPlugin),
+          "jsx-a11y": fixupPluginRules(jsxA11yPlugin),
         },
         languageOptions: {
           parserOptions: {
@@ -131,7 +132,7 @@ export const config = [
         files: ["**/*.ts?(x)", "**/*.js?(x)"],
         ignores: [...allPlaywrightFiles],
         plugins: {
-          "react-hooks": (await import("eslint-plugin-react-hooks")).default,
+          "react-hooks": fixupPluginRules((await import("eslint-plugin-react-hooks")).default),
         },
         rules: {
           // Core hooks rules
@@ -314,7 +315,9 @@ export const config = [
         files: testFiles,
         ignores: [...playwrightTestFiles],
         plugins: {
-          "testing-library": (await import("eslint-plugin-testing-library")).default,
+          "testing-library": fixupPluginRules(
+            (await import("eslint-plugin-testing-library")).default,
+          ),
         },
         rules: {
           "testing-library/await-async-events": ERROR,
@@ -352,7 +355,7 @@ export const config = [
         files: testFiles,
         ignores: [...playwrightTestFiles],
         plugins: {
-          "jest-dom": (await import("eslint-plugin-jest-dom")).default,
+          "jest-dom": fixupPluginRules((await import("eslint-plugin-jest-dom")).default),
         },
         rules: {
           "jest-dom/prefer-checked": ERROR,
@@ -375,7 +378,7 @@ export const config = [
         files: testFiles,
         ignores: [...playwrightTestFiles],
         plugins: {
-          vitest: (await import("@vitest/eslint-plugin")).default,
+          vitest: fixupPluginRules((await import("@vitest/eslint-plugin")).default),
         },
         rules: {
           // you don't want the editor to autofix this, but we do want to be

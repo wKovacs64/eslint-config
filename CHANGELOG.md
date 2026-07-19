@@ -1,5 +1,20 @@
 # Change Log
 
+## 8.0.2
+
+### Patch Changes
+
+- [#122](https://github.com/wKovacs64/eslint-config/pull/122) [`999292a`](https://github.com/wKovacs64/eslint-config/commit/999292a6dd743661e2aa1b54f0586531524eb333) Thanks [@wKovacs64](https://github.com/wKovacs64)! - Update various dependencies.
+
+  ```
+  @vitest/eslint-plugin     ^1.6.21  →  ^1.6.23
+  eslint-plugin-astro        ^3.0.0  →   ^3.0.1
+  eslint-plugin-playwright  ^2.10.4  →  ^2.10.5
+  typescript-eslint         ^8.62.1  →  ^8.64.0
+  ```
+
+- [#120](https://github.com/wKovacs64/eslint-config/pull/120) [`4a7b635`](https://github.com/wKovacs64/eslint-config/commit/4a7b6356000f55508fe21d99d538474aac35b1ed) Thanks [@renovate](https://github.com/apps/renovate)! - Update `eslint-plugin-astro` to v3.
+
 ## 8.0.1
 
 ### Patch Changes

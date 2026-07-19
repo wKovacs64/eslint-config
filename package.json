@@ -1,6 +1,6 @@
 {
   "name": "@wkovacs64/eslint-config",
-  "version": "8.0.1",
+  "version": "8.0.2",
   "private": false,
   "description": "@wKovacs64 ESLint config",
   "keywords": [

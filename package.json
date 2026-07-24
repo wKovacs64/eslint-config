@@ -67,7 +67,7 @@
     "@types/react-dom": "19.2.3",
     "eslint": "10.7.0",
     "oxfmt": "0.59.0",
-    "react": "19.2.7",
+    "react": "19.2.8",
     "typescript": "6.0.3"
   },
   "engines": {

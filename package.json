@@ -68,7 +68,7 @@
     "eslint": "10.8.1",
     "oxfmt": "0.63.0",
     "react": "19.2.8",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   },
   "engines": {
     "node": "^18.18.0 || >=20.0.0"
